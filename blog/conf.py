@@ -47,6 +47,7 @@ html_theme_options = {
         "primary": "deep-purple",  # main color
         "accent": "purple",  # accent color
     },
+    "font": False,  # Use the system font stack
     # Set the repo location to get a badge with stats
     "repo_url": "https://github.com/echedey-ls/echedey-ls.github.io/",
     "repo_name": "echedey-ls.github.io",
