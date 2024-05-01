@@ -5,10 +5,10 @@
 Google Summer of Code 2024 participation
 ========================================
 
-This is the first post in a series of posts that will be published in the
+This is the first post of a series that will be published in the
 coming weeks to talk about my participation in Google Summer of Code 2024.
 
-I will be contributing to the project `*pvlib python* <https://pvlib-python.readthedocs.io/en/stable/>`_ under the NUMFocus umbrella organization.
+I will be contributing to the project `pvlib python <https://pvlib-python.readthedocs.io/en/stable/>`_ under the NUMFocus umbrella organization.
 
 The focus of my project will be to improve existing capabilities, add more scientific models, models and utilities regarding spectral and shading analysis.
 

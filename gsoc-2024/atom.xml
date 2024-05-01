@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://echedey-ls.github.io/echedey-ls/blog</id>
   <title>Echedey's blog</title>
-  <updated>2024-05-01T22:47:28.079132+00:00</updated>
+  <updated>2024-05-01T22:50:20.603710+00:00</updated>
   <link href="https://echedey-ls.github.io/echedey-ls/blog"/>
   <link href="https://echedey-ls.github.io/echedey-ls/blog/gsoc-2024/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.9">ABlog</generator>
@@ -13,12 +13,12 @@
     <author>
       <name>Echedey Luis</name>
     </author>
-    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This is the first post in a series of posts that will be published in the
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This is the first post of a series that will be published in the
 coming weeks to talk about my participation in Google Summer of Code 2024.&lt;/p&gt;
 &lt;/p&gt;
 </content>
     <link href="https://echedey-ls.github.io/echedey-ls/blog/gsoc-2024/gsoc-intro/"/>
-    <summary>This is the first post in a series of posts that will be published in the
+    <summary>This is the first post of a series that will be published in the
 coming weeks to talk about my participation in Google Summer of Code 2024.</summary>
     <category term="gsoc" label="gsoc"/>
     <category term="pvlib" label="pvlib"/>
