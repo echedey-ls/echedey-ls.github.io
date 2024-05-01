@@ -1,5 +1,5 @@
-Welcome to Echedey's personal blog's!
-=====================================
+Welcome to Echedey's personal blog!
+===================================
 
 Here is a list of most recent posts:
 
