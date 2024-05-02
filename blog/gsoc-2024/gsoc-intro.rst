@@ -2,6 +2,8 @@
    :tags: gsoc, pvlib, python
    :category: GSoC-2024
 
+.. updated:: 2024-05-02
+
 Google Summer of Code 2024 participation
 ========================================
 
@@ -13,6 +15,8 @@ I will be contributing to the project `pvlib python <https://pvlib-python.readth
 The focus of my project will be to improve existing capabilities, add more scientific models, models and utilities regarding spectral and shading analysis.
 
 I will update this page with my proposals once they get published.
+
+Meanwhile, the link to the project proposal is `here <https://summerofcode.withgoogle.com/programs/2024/projects/fxPFQqZc>`_.
 
 I'm very thankful to the pvlib team for giving me this opportunity, specially to Adam R. Jensen and Kevin Anderson for their guidance and support.
 
