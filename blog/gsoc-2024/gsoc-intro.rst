@@ -3,6 +3,7 @@
    :category: GSoC-2024
 
 .. update:: 2024-05-02
+   Update links.
 
 Google Summer of Code 2024 participation
 ========================================
