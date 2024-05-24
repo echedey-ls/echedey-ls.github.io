@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://echedey-ls.github.io/echedey-ls/blog</id>
   <title>Echedey's blog</title>
-  <updated>2024-05-24T09:45:50.022825+00:00</updated>
+  <updated>2024-05-24T10:04:10.653260+00:00</updated>
   <link href="https://echedey-ls.github.io/echedey-ls/blog"/>
   <link href="https://echedey-ls.github.io/echedey-ls/blog/gsoc-2024/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.9">ABlog</generator>
