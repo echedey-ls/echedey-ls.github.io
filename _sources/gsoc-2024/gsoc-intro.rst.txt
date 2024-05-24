@@ -2,7 +2,7 @@
    :tags: gsoc, pvlib, python
    :category: GSoC-2024
 
-.. updated:: 2024-05-02
+.. update:: 2024-05-02
 
 Google Summer of Code 2024 participation
 ========================================
