@@ -79,7 +79,7 @@ html_context = {
 # -- Blog options ------------------------------------------------------------
 # https://ablog.readthedocs.io/en/stable/manual/ablog-configuration-options.html
 blog_title = "Echedey's blog"
-blog_path = "gsoc-2024"
+blog_path = "posts"
 blog_baseurl = "https://echedey-ls.github.io/echedey-ls/blog"
 blog_authors = {
     "Echedey": ("Echedey Luis", "https://echedey-ls.github.io"),
