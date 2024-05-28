@@ -30,11 +30,11 @@ jobs:
     - name: Build the site
       run: |
         cd ./blog
-        make html
+        make dirhtml
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./blog/_build/html
+        publish_dir: ./blog/_build/dirhtml
