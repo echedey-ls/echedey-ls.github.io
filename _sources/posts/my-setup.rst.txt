@@ -54,8 +54,8 @@ Other tools
 Handy links for y'all
 ^^^^^^^^^^^^^^^^^^^^^
 
-- [VS Code](https://code.visualstudio.com/)
-- Ever needed to write an rST docstring? [Here's a cheatsheet](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
+- `VS Code <https://code.visualstudio.com/>`_
+- Ever needed to write an rST docstring? `Here's a cheatsheet <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
 
 I hope to have given some insight on how I work and help my GSoC colleagues to improve their workflow. I'm always open to suggestions and improvements, so feel free to reach out to me if you have any!
 
@@ -63,17 +63,17 @@ I hope to have given some insight on how I work and help my GSoC colleagues to i
 Non-Python development
 ----------------------
 To give credit to all that work behind some software I use, before I can donate to them with my first salary:
-- [KiCad](https://www.kicad.org/) for PCB design
-- [Microcap](https://web.archive.org/web/20230219052113/http://www.spectrum-soft.com/index.shtm) free although proprietary circuit design and simulator, better than the OrCAD we had to use at university
-- [Saber](https://github.com/saber-notes/saber/) for hand-written notes in the tablet
-- [RustDesk](https://rustdesk.com/) for IT supporting my family and friends
+- `KiCad <https://www.kicad.org/>`_ for PCB design
+- `Microcap <https://web.archive.org/web/20230219052113/http://www.spectrum-soft.com/index.shtm>`_ free although proprietary circuit design and simulator, better than the OrCAD we had to use at university
+- `Saber <https://github.com/saber-notes/saber/>`_ for hand-written notes in the tablet
+- `RustDesk <https://rustdesk.com/>`_ for IT supporting my family and friends
 - Mozilla's Firefox and Thunderbird, the best open-source browser and email client
-- [Putty](https://putty.org/) for SSH connections and server management
+- `Putty <https://putty.org/>`_ for SSH connections and server management
   Worth to mention the Python telegram and mail bots that send the public IP addresses, just letting that sink in.
-- [Simplewall](https://github.com/henrypp/simplewall), a simple and effective firewall
-- [Zotero](https://www.zotero.org/), the best bibliographic reference manager
-- [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) for reading PDFs
-- [GIMP](https://www.gimp.org/) for image editing
-- [IrfanView](https://www.irfanview.com/) for quick image viewing
+- `Simplewall <https://github.com/henrypp/simplewall>`_, a simple and effective firewall
+- `Zotero <https://www.zotero.org/>`_, the best bibliographic reference manager
+- `SumatraPDF <https://www.sumatrapdfreader.org/free-pdf-reader.html>`_ for reading PDFs
+- `GIMP <https://www.gimp.org/>`_ for image editing
+- `IrfanView <https://www.irfanview.com/>`_ for quick image viewing
 
 The list goes on, but I owe a lot of thanks to these tools and the people behind them. Thank you very much.
