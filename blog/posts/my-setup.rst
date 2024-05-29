@@ -9,7 +9,7 @@ Hi everyone! I'm going to talk a bit about how I work on the programming project
 
 After many years trying different IDEs and languages (C/Cpp, VHDL, Matlab/Octave, PowerShell, Makefiles, LaTeX, G-Code, AWL, Go), most of them for university, I can safely state that I hate all and each one of the proprietary development environments I've tried. I'm looking at you, MPLAB X IDE, STMCube, Vivado, Siemens Step 7 and TIA Portal, and Matlab. Visual Studio is fine enough to tolerate it, but I still prefer Visual Studio Code.
 
-I've been using it since 2018 or so, and the amount of extensions it has is just amazing. I've used it for (almost?) all of the mentioned languages and environments, and my go-to is install the propietary IDE only to configure and generate project files, sometimes even build it. Writing the code and formatting is always done in VS Code.
+I've been using it since 2018 or so, and the amount of extensions it has is just amazing. I've used it for (almost?) all of the mentioned languages and environments, and my go-to is install the proprietary IDE only to configure and generate project files, sometimes even build it. Writing the code and formatting is always done in VS Code.
 
 I don't want to be the VS Code fanboy, it still has some drawbacks I dislike, like that it's not fully open-source (Codium is the open-source build of it, thou it won't let you use some Microsoft extensions) and it's a bit slow. But it's the best I've found so far.
 
