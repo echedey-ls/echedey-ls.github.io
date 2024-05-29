@@ -63,6 +63,7 @@ I hope to have given some insight on how I work and help my GSoC colleagues to i
 Non-Python development
 ----------------------
 To give credit to all that work behind some software I use, before I can donate to them with my first salary:
+
 - `KiCad <https://www.kicad.org/>`_ for PCB design
 - `Microcap <https://web.archive.org/web/20230219052113/http://www.spectrum-soft.com/index.shtm>`_ free although proprietary circuit design and simulator, better than the OrCAD we had to use at university
 - `Saber <https://github.com/saber-notes/saber/>`_ for hand-written notes in the tablet
