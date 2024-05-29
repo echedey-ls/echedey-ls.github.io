@@ -2,12 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://echedey-ls.github.io/echedey-ls/blog</id>
   <title>Echedey's blog</title>
-  <updated>2024-05-28T23:57:15.845064+00:00</updated>
+  <updated>2024-05-29T00:00:20.881242+00:00</updated>
   <link href="https://echedey-ls.github.io/echedey-ls/blog"/>
   <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.10">ABlog</generator>
   <entry>
-    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/gsoc-intro/</id>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/my-setup/</id>
+    <title>My development stack</title>
+    <updated>2024-05-29T00:00:00+00:00</updated>
+    <author>
+      <name>Echedey Luis</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Hi everyone! I’m going to talk a bit about how I work on the programming projects I’m involved with, and how I plan to continue working on GSoC. I hope this post helps you to improve your workflow, or at least to get to know me a bit better.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/my-setup/"/>
+    <summary>Hi everyone! I’m going to talk a bit about how I work on the programming projects I’m involved with, and how I plan to continue working on GSoC. I hope this post helps you to improve your workflow, or at least to get to know me a bit better.</summary>
+    <category term="gsoc" label="gsoc"/>
+    <category term="pvlib" label="pvlib"/>
+    <category term="python" label="python"/>
+    <published>2024-05-29T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-intro/</id>
     <title>Google Summer of Code 2024 participation</title>
     <updated>2024-05-01T00:00:00+00:00</updated>
     <author>
@@ -17,7 +34,7 @@
 coming weeks to talk about my participation in Google Summer of Code 2024.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/gsoc-intro/"/>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-intro/"/>
     <summary>This is the first post of a series that will be published in the
 coming weeks to talk about my participation in Google Summer of Code 2024.</summary>
     <category term="gsoc" label="gsoc"/>
