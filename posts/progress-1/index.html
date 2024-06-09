@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drafts &#8212; Echedey&#39;s personal blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GSoC progress update: difficulties and change of plans &#8212; Echedey&#39;s personal blog</title>
   
   
   
@@ -37,7 +38,7 @@
     <script src="../../_static/documentation_options.js?v=3ff7b324"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'posts/drafts';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'posts/progress-1';</script>
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
 
@@ -221,6 +222,10 @@ document.write(`
   
 
   
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -334,7 +339,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Drafts</li>
+    <li class="breadcrumb-item active" aria-current="page">GSoC...</li>
   </ul>
 </nav>
 </div>
@@ -351,91 +356,53 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+<section id="gsoc-progress-update-difficulties-and-change-of-plans">
+<h1>GSoC progress update: difficulties and change of plans<a class="headerlink" href="#gsoc-progress-update-difficulties-and-change-of-plans" title="Link to this heading">#</a></h1>
+<p>Most of my proposed contributions have pull requests opened and are looking good (I believe). Many of them have at least some kind of feedback or review. However, we have discussed that one of my PRs that would include data without a proper paper backing it up does not align with pvlib python objectives. Therefore, I am looking both for papers and datasets that have some spectral response data of, preferably, common PV cell materials. Help is welcome!</p>
+<section id="what-is-pending">
+<h2>What is pending<a class="headerlink" href="#what-is-pending" title="Link to this heading">#</a></h2>
+<p>The only missing PR from my batch of proposals is the Photosynthetically Active Radiation (PAR) shading calculation procedure, both for direct and diffuse components.</p>
+<p>I’m heavily working on the direct beam shading factor, since the spatial calculus required is really complex. It requires rotating planes and lots of intersections and unions of 3D and 2D objects. Thou there are some packages out there that help me with this, implementation of a solution that integrates well with pvlib is kind of difficult. Specially since the workflow is oriented to time-series data, and grasping the data-types and user API is a bit complex.</p>
+<p>Did I state that this would be the first time pvlib will have spatial calculations? Yeah, there is no coded reference to follow. Finally I decided to make an Object-Oriented approach - I’m trying to follow it similarly to the <code class="docutils literal notranslate"><span class="pre">Modelchain</span></code>, but they differentiate in soo many ways…</p>
+<p>I’ll hype up this contribution with two Matplotlib 3D scene plots hehe:</p>
+<figure class="align-center" id="id1">
+<img alt="3D scene plot of a row and a projected shade in a random plane under it" src="../../_images/shading_3d_scene_example_01.png" />
+<figcaption>
+<p><span class="caption-text">Done with procedural code following the references, for an unique timestamp.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The current code I have for the last plot looks like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %%</span>
+<span class="c1"># Plot example problem</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s2">&quot;3d&quot;</span><span class="p">)</span>
+<span class="c1"># Params: center point, surface_azimuth, surface_tilt, axis_tilt, width, length</span>
+<span class="n">field</span> <span class="o">=</span> <span class="n">RectangularSurface</span><span class="p">([</span><span class="mi">20</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">field</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;forestgreen&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">pv_row1</span> <span class="o">=</span> <span class="n">RectangularSurface</span><span class="p">([</span><span class="mi">20</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">pv_row1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;darkblue&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">pv_row2</span> <span class="o">=</span> <span class="n">RectangularSurface</span><span class="p">([</span><span class="mi">20</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">pv_row2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;darkblue&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 
-<div class="section ablog__collection">
-  <h1>
-    
-      <span>
-      
-    Drafts
-    
-  </span>
-  </h1>
-  
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../progress-1/">GSoC progress update: difficulties and change of plans</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-pencil"></i>
-        
-        
-        <span>2024-06-10</span>
-        
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../tag/gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="../tag/pvlib/">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../tag/python/">python</a>
-  
-  
-  
-</li>
-
-
+<span class="c1"># %%</span>
+<span class="c1"># Calculate the shadows</span>
+<span class="n">shades</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">get_shades_from</span><span class="p">(</span><span class="n">solar_zenith</span><span class="p">,</span> <span class="n">solar_azimuth</span><span class="p">,</span> <span class="n">pv_row1</span><span class="p">,</span> <span class="n">pv_row2</span><span class="p">)</span>
+<span class="c1"># TODO: shades union, intersection with the field surface and shade factor calculation</span>
+</pre></div>
 </div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>Most of my proposed contributions have pull requests opened and are looking good (I believe). Many of them have at least some kind of feedback or review. However, we have discussed that one of my PRs that would include data without a proper paper backing it up does not align with pvlib python objectives. Therefore, I am looking both for papers and datasets that have some spectral response data of, preferably, common PV cell materials. Help is welcome!</p>
-</p>
+<p>Regarding the diffuse component, I think I will leave it out for now. Maybe even for the whole GSoC period. I find it too tightly coupled to each spatial problem that coming up with a general approach seems unfeasible. And that the paper assumes an isotropic sky, which at this point seems like another source of error. Add the fact that it is a component that a good amount of time is not as relevant as the direct component. So I will focus on the direct component for now.</p>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<p>I will continue working on the direct beam shading factor for this month, while I also redact my final year thesis and finish my internship (and move from the capital city). Yup, I’m going to have <em>fun</em> this month!</p>
+</section>
+</section>
 
-    <p class="ablog-post-expand"><a href="../progress-1/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
+<div class="section ablog__blog_comments">
+  
+  
+
+
   
   
 </div>
@@ -455,6 +422,49 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-pending">What is pending</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next steps</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/echedey-ls/echedey-ls.github.io/edit/main/blog/posts/progress-1.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/posts/progress-1.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
               
             
           </div>
