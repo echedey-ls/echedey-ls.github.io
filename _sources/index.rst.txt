@@ -7,8 +7,9 @@ Here is a list of most recent posts:
    :excerpts:
 
 
-Indices and tables
-==================
+Indices
+=======
 
+* :ref:`Posts Archive <blog-archives>`
 * :ref:`genindex`
 * :ref:`search`

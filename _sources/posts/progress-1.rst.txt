@@ -24,7 +24,7 @@ I'll hype up this contribution with two Matplotlib 3D scene plots hehe:
 
    Done with procedural code following the references, for an unique timestamp.
 
-.. image:: /images/2024/shading_3d_scene_example_02.png
+.. figure:: /images/2024/shading_3d_scene_example_02.png
    :alt: 3D scene plot of the fixed-tilt system example. Surface below the system is the crop field. 
    :align: center
 
