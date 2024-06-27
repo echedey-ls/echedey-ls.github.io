@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://echedey-ls.github.io/echedey-ls/blog</id>
   <title>Echedey's blog</title>
-  <updated>2024-06-11T10:56:08.053784+00:00</updated>
+  <updated>2024-06-27T11:37:56.767721+00:00</updated>
   <link href="https://echedey-ls.github.io/echedey-ls/blog"/>
   <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.10">ABlog</generator>
+  <entry>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-2/</id>
+    <title>GSoC progress update: dependencies rant</title>
+    <updated>2024-06-27T00:00:00+00:00</updated>
+    <author>
+      <name>Echedey Luis</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;I was going to contribute my biggest PR, the direct beam shading factor via 3d
+spatial calculus. I developed an OOP approach that uses &lt;cite&gt;shapely&lt;/cite&gt; for the
+geometric operations. However, thanks to an user thread on the mailing list, I
+found that &lt;cite&gt;solarfactors&lt;/cite&gt;, a dependency of &lt;cite&gt;pvlib&lt;/cite&gt;, has pinned the maximum
+version of &lt;cite&gt;shapely&lt;/cite&gt; to anything lesser than 2.0.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-2/"/>
+    <summary>I was going to contribute my biggest PR, the direct beam shading factor via 3d
+spatial calculus. I developed an OOP approach that uses shapely for the
+geometric operations. However, thanks to an user thread on the mailing list, I
+found that solarfactors, a dependency of pvlib, has pinned the maximum
+version of shapely to anything lesser than 2.0.</summary>
+    <category term="gsoc" label="gsoc"/>
+    <category term="pvlib" label="pvlib"/>
+    <category term="python" label="python"/>
+    <published>2024-06-27T00:00:00+00:00</published>
+  </entry>
   <entry>
     <id>https://echedey-ls.github.io/echedey-ls/blog/posts/progress-1/</id>
     <title>GSoC progress update: difficulties and change of plans</title>
