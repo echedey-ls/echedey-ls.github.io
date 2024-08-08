@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts tagged pvlib &#8212; Echedey&#39;s personal blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GSoC progress update: coming to the end &#8212; Echedey&#39;s personal blog</title>
   
   
   
@@ -37,7 +38,7 @@
     <script src="../../../_static/documentation_options.js?v=3ff7b324"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'posts/tag/pvlib';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'posts/gsoc-2024/progress-4';</script>
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" />
 
@@ -48,7 +49,7 @@
   rel="alternate"
   type="application/atom+xml"
   href="../../../posts/atom.xml"
-  title="Posts tagged pvlib"
+  title="Echedey's blog"
 />
 
 
@@ -223,6 +224,10 @@ document.write(`
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -336,7 +341,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Posts tagged pvlib</li>
+    <li class="breadcrumb-item active" aria-current="page">GSoC...</li>
   </ul>
 </nav>
 </div>
@@ -353,538 +358,39 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+<section id="gsoc-progress-update-coming-to-the-end">
+<h1>GSoC progress update: coming to the end<a class="headerlink" href="#gsoc-progress-update-coming-to-the-end" title="Link to this heading">#</a></h1>
+<p>Last contributions to pvlib-python have been slow-paced, but that’s understandable since the amount of remaining GSoC proposals was decreased to the astonishing number of zero. Nevertheless, there is a small surprise in there.</p>
+<p>The proposal of adding 3D shading calculations to pvlib-python was decided not to continue working on it. The main reason was that this kind of procedures don’t fit well with the current library purposes and maintenance in the mid- and long-term would be difficult. In the future I may still work on it, as a stand-alone package, possibly on some other programming language, but for now it’s not a priority.</p>
+<p>And now, let’s talk about the surprise; Chris Deline, the first author of a model of power yield correction due to uneven distribution of backside irradiance in bifacial PV modules, has requested to compare his model with the one I implemented - and was already merged. This model is a polynomial fit to the Relative Mean Absolute Difference (RMAD) of the total irradiance, assuming a concrete distribution of the backside irradiance. Now, the surprise: we all know about the difference between “Error” and “Difference”, right? Well, mathematicians invented yet another word for a similar concept, “Deviation”. I copy-pasted some implementation on the Internet that calculated the RMAD as the “Deviation” of the input data, instead of the “Difference”. This big mistake has been fixed in an addendum branch without any further consequences.</p>
+<p>Additionally, from the comparison, we have found that the implementation the author asked me to compare with had an issue with the units input and output. I have fixed that too, and now we are waiting for the author to review the changes.</p>
+<p>Now I’m using my spare time to maintain SciencePlots thanks to all I learnt through this journey; currently adding a minimal test suite and a documentation webpage in the future.</p>
+<p>Regarding pvlib, I’ll possibly hunt small issues in the code -with a linter- for the contributing-to-pvlib workshop at PVPMC in Copenhagen, can’t wait!</p>
+</section>
 
-<div class="section ablog__collection">
-  <h1>
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
     
-      <span>Posts tagged
+    
+    <a href="../progress-3/">
       
-    pvlib
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>GSoC progress update: last PRs of the project</span>
+    </a>
     
   </span>
-  </h1>
-  
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/progress-4/">GSoC progress update: coming to the end</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-08-08</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
     
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
+  </span>
 </div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>Last contributions to pvlib-python have been slow-paced, but that’s understandable since the amount of remaining GSoC proposals was decreased to the astonishing number of zero. Nevertheless, there is a small surprise in there.</p>
-</p>
 
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/progress-4/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/progress-3/">GSoC progress update: last PRs of the project</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-07-15</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
-    
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
-</div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>Thanks to all the reviewers and fellow GSoC students reviewing my PRs, I have been able to keep a good pace of contributions. What’s more, I’ve been able to do a few things more outside of my project, specially regarding documentation, bugs, typos and tests.</p>
-</p>
-
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/progress-3/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/progress-2/">GSoC progress update: dependencies rant</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-06-27</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
-    
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
-</div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>I was going to contribute my biggest PR, the direct beam shading factor via 3d
-spatial calculus. I developed an OOP approach that uses <cite>shapely</cite> for the
-geometric operations. However, thanks to an user thread on the mailing list, I
-found that <cite>solarfactors</cite>, a dependency of <cite>pvlib</cite>, has pinned the maximum
-version of <cite>shapely</cite> to anything lesser than 2.0.</p>
-</p>
-
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/progress-2/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/progress-1/">GSoC progress update: difficulties and change of plans</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-06-10</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
-    
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
-</div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>Most of my proposed contributions have pull requests opened and are looking good (I believe). Many of them have at least some kind of feedback or review. However, we have discussed that one of my PRs that would include data without a proper paper backing it up does not align with pvlib python objectives. Therefore, I am looking both for papers and datasets that have some spectral response data of, preferably, common PV cell materials. Help is welcome!</p>
-</p>
-
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/progress-1/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/my-setup/">My development stack</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-05-29</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
-    
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
-</div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>Hi everyone! I’m going to talk a bit about how I work on the programming projects I’m involved with, and how I plan to continue working on GSoC. I hope this post helps you to improve your workflow, or at least to get to know me a bit better.</p>
-</p>
-
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/my-setup/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
-  
-  <div class="section ablog-post">
-    <h2 class="ablog-post-title">
-      <a href="../../gsoc-2024/gsoc-intro/">Google Summer of Code 2024 participation</a>
-    </h2>
-    <ul class="ablog-archive">
-      <li>
-        
-        
-        <i class="fa fa-calendar"></i>
-        
-        <span>2024-05-01</span>
-        
-      </li>
-      <div class="ablog-sidebar-item ablog__postcard2">
-
-
-<li id="ablog-sidebar-item author ablog__author">
-  <span>
-    
-    <i class="fa-fw fa fa-user"></i>
-    
-    </span>
-  
-  
-  <a href="../../author/echedey-luis/">Echedey Luis</a>
-  
-  
-  
-</li>
-
-
-
-
-<li id="ablog-sidebar-item category ablog__category">
-  <span>
-    
-    <i class="fa-fw fa fa-folder-open"></i>
-    
-    </span>
-  
-  
-  <a href="../../category/gsoc-2024/">GSoC-2024</a>
-  
-  
-  
-</li>
-
-
-<li id="ablog-sidebar-item tags ablog__tags">
-  <span>
-    
-    
-    <i class="fa-fw fa fa-tags"></i>
-    
-    
-    </span>
-  
-  
-  <a href="../gsoc/">gsoc</a>
-  
-  
-  
-  
-  
-  <a href="#">pvlib</a>
-  
-  
-  
-  
-  
-  <a href="../python/">python</a>
-  
-  
-  
-</li>
-
-
-</div>
-    </ul>
-    <p class="ablog-post-excerpt"><p>This is the first post of a series that will be published in the
-coming weeks to talk about my participation in Google Summer of Code 2024.</p>
-</p>
-
-    <p class="ablog-post-expand"><a href="../../gsoc-2024/gsoc-intro/"><em>Read more ...</em></a></p>
-    <hr/>
-  </div>
   
   
 </div>
@@ -904,6 +410,36 @@ coming weeks to talk about my participation in Google Summer of Code 2024.</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/echedey-ls/echedey-ls.github.io/edit/main/blog/posts/gsoc-2024/progress-4.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/posts/gsoc-2024/progress-4.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
               
             
           </div>

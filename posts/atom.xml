@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://echedey-ls.github.io/echedey-ls/blog</id>
   <title>Echedey's blog</title>
-  <updated>2024-07-17T14:06:37.937404+00:00</updated>
+  <updated>2024-08-08T11:26:30.907320+00:00</updated>
   <link href="https://echedey-ls.github.io/echedey-ls/blog"/>
   <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.10">ABlog</generator>
+  <entry>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-4/</id>
+    <title>GSoC progress update: coming to the end</title>
+    <updated>2024-08-08T00:00:00+00:00</updated>
+    <author>
+      <name>Echedey Luis</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Last contributions to pvlib-python have been slow-paced, but that’s understandable since the amount of remaining GSoC proposals was decreased to the astonishing number of zero. Nevertheless, there is a small surprise in there.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-4/"/>
+    <summary>Last contributions to pvlib-python have been slow-paced, but that’s understandable since the amount of remaining GSoC proposals was decreased to the astonishing number of zero. Nevertheless, there is a small surprise in there.</summary>
+    <category term="gsoc" label="gsoc"/>
+    <category term="pvlib" label="pvlib"/>
+    <category term="python" label="python"/>
+    <published>2024-08-08T00:00:00+00:00</published>
+  </entry>
   <entry>
     <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-3/</id>
     <title>GSoC progress update: last PRs of the project</title>
@@ -49,7 +66,7 @@ version of shapely to anything lesser than 2.0.</summary>
     <published>2024-06-27T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/progress-1/</id>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-1/</id>
     <title>GSoC progress update: difficulties and change of plans</title>
     <updated>2024-06-10T00:00:00+00:00</updated>
     <author>
@@ -58,7 +75,7 @@ version of shapely to anything lesser than 2.0.</summary>
     <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Most of my proposed contributions have pull requests opened and are looking good (I believe). Many of them have at least some kind of feedback or review. However, we have discussed that one of my PRs that would include data without a proper paper backing it up does not align with pvlib python objectives. Therefore, I am looking both for papers and datasets that have some spectral response data of, preferably, common PV cell materials. Help is welcome!&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/progress-1/"/>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/progress-1/"/>
     <summary>Most of my proposed contributions have pull requests opened and are looking good (I believe). Many of them have at least some kind of feedback or review. However, we have discussed that one of my PRs that would include data without a proper paper backing it up does not align with pvlib python objectives. Therefore, I am looking both for papers and datasets that have some spectral response data of, preferably, common PV cell materials. Help is welcome!</summary>
     <category term="gsoc" label="gsoc"/>
     <category term="pvlib" label="pvlib"/>
@@ -66,7 +83,7 @@ version of shapely to anything lesser than 2.0.</summary>
     <published>2024-06-10T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/my-setup/</id>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/my-setup/</id>
     <title>My development stack</title>
     <updated>2024-05-29T00:00:00+00:00</updated>
     <author>
@@ -75,7 +92,7 @@ version of shapely to anything lesser than 2.0.</summary>
     <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Hi everyone! I’m going to talk a bit about how I work on the programming projects I’m involved with, and how I plan to continue working on GSoC. I hope this post helps you to improve your workflow, or at least to get to know me a bit better.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/my-setup/"/>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/my-setup/"/>
     <summary>Hi everyone! I’m going to talk a bit about how I work on the programming projects I’m involved with, and how I plan to continue working on GSoC. I hope this post helps you to improve your workflow, or at least to get to know me a bit better.</summary>
     <category term="gsoc" label="gsoc"/>
     <category term="pvlib" label="pvlib"/>
@@ -83,7 +100,7 @@ version of shapely to anything lesser than 2.0.</summary>
     <published>2024-05-29T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-intro/</id>
+    <id>https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/gsoc-intro/</id>
     <title>Google Summer of Code 2024 participation</title>
     <updated>2024-05-01T00:00:00+00:00</updated>
     <author>
@@ -93,7 +110,7 @@ version of shapely to anything lesser than 2.0.</summary>
 coming weeks to talk about my participation in Google Summer of Code 2024.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-intro/"/>
+    <link href="https://echedey-ls.github.io/echedey-ls/blog/posts/gsoc-2024/gsoc-intro/"/>
     <summary>This is the first post of a series that will be published in the
 coming weeks to talk about my participation in Google Summer of Code 2024.</summary>
     <category term="gsoc" label="gsoc"/>
