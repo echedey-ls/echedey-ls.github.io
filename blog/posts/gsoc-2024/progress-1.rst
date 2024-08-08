@@ -56,4 +56,4 @@ Regarding the diffuse component, I think I will leave it out for now. Maybe even
 Next steps
 ----------
 
-I will continue working on the direct beam shading factor for this month, while I also redact my final year thesis and finish my internship (and move from the capital city). Yup, I'm going to have *fun* this month!
+I will continue working on the direct beam shading factor for this month, while I also redact my final year dissertation and finish my internship (and move from the capital city). Yup, I'm going to have *fun* this month!
